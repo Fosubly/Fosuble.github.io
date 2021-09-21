@@ -1,19 +1,133 @@
-header{
-   text-align: justify;
-   letter-spacing: 1px;
-   height: 8em;
-   padding: 2em 10%;
-   background: cadetblue;
-   color: #fff;
+body{
+    font-size: 10px;
 }
 
-header h1,
-header nav {
-    display: inline-block;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
-header::after {
-    content: '';
-    display: inline-block;
+.header{
+    background-color: green;
     width: 100%;
+    height: 50vh;
+    
+}
+
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    background-color: red;
+    width: 500px;
+    height: 50px;
+}
+
+.img_logo{
+    height: 50px;
+}
+
+.header_logo{
+    font-size: 50px;
+    color: white;
+}
+.header_text{
+    font-size: 40px;
+    color: white;
+}
+
+.nav{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+.nav_link{
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    color: white;
+    vertical-align: top;
+}
+
+
+.search{
+    margin:0 auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 215px;
+    text-align:center;
+    font-size: 30px;
+    color: white;
+}
+
+
+#search_box{
+    width: 1200px;
+}
+
+#q{
+    width: 500px;
+    font-size: 20px;
+}
+
+/* end header block */
+
+/* Category block*/
+
+.category{
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.cat_nav_link{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 35px;
+    margin: 0 30px;
+    text-decoration: none;
+    color: gray;
+    position: relative;
+    
+    
+    transition: color .2s liner;
+}
+
+
+/* выделение менюшек*/
+.cat_nav_link:hover{
+    color: green;
+}
+
+
+/*для появления полосочки при наведении*/
+.cat_nav_link:after{
+    content: "";
+    display: none;
+    width: 100%;
+    height: 5px;
+
+    background-color: green;
+    position: absolute;
+}
+
+.cat_nav_link:hover:after{
+    display: block;
+}
+
+/*end Category block*/
+
+
+/* Content */
+.content{
+    background-color: gray;
+    width: 100%;
+    height: 100vh;
 }
