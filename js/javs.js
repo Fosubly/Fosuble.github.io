@@ -13,6 +13,6 @@ window.onload = function()
 
 function Pidor()
 {
-    //Отсылка не Лебовки )))
+    //Отсылка не Лебовcки )))
     window.alert("КАПОШКО, ГДЕ МОИ ФОТКИ????")
 }
