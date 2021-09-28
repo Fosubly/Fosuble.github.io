@@ -14,5 +14,5 @@ window.onload = function()
 function Pidor()
 {
     //Отсылка не Лебовcки )))
-    window.alert("КАПОШКО, ГДЕ МОИ ФОТКИ????")
+    window.alert("Все нормально,фотки на месте!!!")
 }

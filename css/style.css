@@ -1,5 +1,7 @@
 body{
+    font-family: 'Montserrat', sans-serif;
     font-size: 10px;
+    margin: 0px;
 }
 
 *,
@@ -9,9 +11,13 @@ body{
 }
 
 .header{
-    background-color: green;
+    background-image: url(../images/dino.png);
+    background-repeat: no-repeat;
+    background-size: 100% 150%; 
+    z-index: 1000;
+
     width: 100%;
-    height: 50vh;
+    height: 500px;
     
 }
 
@@ -22,21 +28,28 @@ body{
 }
 
 .logo{
-    background-color: red;
-    width: 500px;
+    
+    width: 600px;
     height: 50px;
 }
 
 .img_logo{
-    height: 50px;
+    margin-right: 25px;
+    margin-top: 4px;
+    height: 55px;
+    width: 55px;
 }
 
 .header_logo{
-    font-size: 50px;
-    color: white;
+    position: absolute;
+    top: 5px; left: 60px;
+    font-size: 45px;
+    color: #01aa25;
 }
 .header_text{
-    font-size: 40px;
+    position: absolute;
+    top: 5px; left: 125px;
+    font-size: 45px;
     color: white;
 }
 
@@ -44,11 +57,12 @@ body{
     display: inline-block;
     vertical-align: top;
     margin: 0 10px;
+    margin-top: 25px;
 }
 
 .nav_link{
     text-decoration: none;
-    margin: 0 20px;
+    margin-left: 25px;
     font-size: 20px;
     color: white;
     vertical-align: top;
@@ -56,24 +70,28 @@ body{
 
 
 .search{
-    margin:0 auto;
+    margin:100px auto;
     width: 100%;
     max-width: 1200px;
     height: 215px;
     text-align:center;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
 }
 
 
 #search_box{
-    width: 1200px;
+    margin: 0 auto;
 }
 
 #q{
-    width: 500px;
+    width: 810px;
+    height:60px;
     font-size: 20px;
+    padding-left: 25px;
+    margin: 25px auto;
 }
+
 
 /* end header block */
 
