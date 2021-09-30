@@ -60,7 +60,7 @@ body{
 .nav{
     display: inline-block;
     vertical-align: top;
-    margin: 0 10px;
+    margin: 0 25px;
     margin-top: 25px;
 }
 
@@ -137,7 +137,7 @@ body{
 
 /* выделение менюшек*/
 .cat_nav_link:hover{
-    color: green;
+    color: #01aa25;
 }
 
 
