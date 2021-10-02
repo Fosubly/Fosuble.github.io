@@ -1,8 +1,8 @@
 onload = function()
 {
-    var img_grounds = ['images/VEL.png',
-                       'images/dino.png'];
-    var t = 3;
+    var img_grounds = ['images/BARAB.png',
+    					'images/VEL.png'];
+    var t = 5;
     setInterval(function()
                 {
                     var p = img_grounds.shift();
