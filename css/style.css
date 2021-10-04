@@ -2,8 +2,22 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
     margin: 0px;
+    width: auto;
+   
+    background-repeat: no-repeat;
     
 }
+
+.header{
+    height: 69%;
+    width: 100%;
+    background-repeat: no-repeat;
+    max-height: 700px;
+    position: absolute;
+   
+
+}
+
 
 *,
 *:before,
@@ -11,24 +25,9 @@ body{
     box-sizing: border-box;
 }
 
-
-
-.header{
-    background-image: url(../images/VEL.png);
-    background-repeat: no-repeat;
-    
-                                                                                                        
-    background-size: 100% 160%;
-
-                   
-    
-    width: 100%;
-    height: 500px;
-    
-}
-
-
 .header_inner{
+    position: fixed; top: 0px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -60,6 +59,7 @@ body{
 }
 
 .nav{
+    position: absolute; right:10px;
     display: inline-block;
     vertical-align: top;
     margin: 0 25px;
@@ -69,16 +69,16 @@ body{
 .nav_link{
     text-decoration: none;
     margin-left: 25px;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
     vertical-align: top;
 }
 
 
 .search{
+    position: absolute; top:0px;
     margin:100px auto;
     width: 100%;
-    max-width: 1200px;
     height: 215px;
     text-align: center;
     font-size: 40px;
@@ -94,6 +94,7 @@ body{
     color: #5e5e5e;
     background-color: white;
     border-radius: 10px;
+
 }
 
 #q{
@@ -167,3 +168,43 @@ body{
     width: 100%;
     height: 100vh;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0px; background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery {
+  height: 100%; 
+
+  width: 100%; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%; 
+  height: 100%;
+
+  margin: 0px;
+  font-size: 0; animation: 30s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; max-height: 700px;}
+
+
