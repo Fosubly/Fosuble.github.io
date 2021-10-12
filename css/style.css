@@ -97,7 +97,7 @@ body{
 #search_box{
     font-family: 'Roboto', sans-serif;
     margin: 25px auto;
-    width: 900px;
+    width: 47%;
     height: 60px;
     font-size: 20px;
     color: #5e5e5e;
@@ -108,7 +108,8 @@ body{
 
 #q{
     font-family: 'Roboto', sans-serif;
-    width: 810px;
+    margin: 0px;
+    width: 90%;
     height:60px;
     border: none;
     font-size: 25px;
@@ -211,7 +212,7 @@ div#captioned-gallery {
   height: 100%;
   margin: 0px;
   font-size: 0;
-  animation: 10s slidy infinite;
+  animation: 30s slidy infinite;
   display: flex;
 }
 
