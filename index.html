@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link rel = "icon" href = "images/icon.ico" type = "image/x-icon">
+    <link rel = "icon" href = "images/icon.ico" type="image/x-icon">
+    <!-- Вань, запихни эту часть в css она сразу не прогружается, ее нид ток в css -->
     <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');</style>
     <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');</style>
+   
     <title>3D Portvolio</title>
-
+    
   </head>
 
 
@@ -55,7 +57,8 @@
 
     <div class="content">
       <div class="photo_col">
-        <img src="images/VELR.png" alt="">
+        <!-- крч тут ща буид месиво, и я буду комментить. Через a мы открываем модальное окно, эта хуета буит внизу-->
+        <a href="#modal_win" id="modal_open"><img src="images/VELR.png" alt=""></a>
         <img src="images/BARABR.png" alt="">
       </div>
       <div class="photo_col">
@@ -67,7 +70,21 @@
         <img src="images/VELR.png" alt="">
       </div>
       
+      
     </div>
+
+    <!-- Вот тут начинается дрочильня -->
+    <div id="modal_win" class="modal_window">
+      <div class="modal_content">
+        <!-- Да-да оригинально, эт крч крестик чтобы закрыть -->
+        <a href="#close" title="close" class="close">X</a >
+        <h1>Hello</h1>
+        <!-- В целом все формируем окошко для контента, но я хз, поход нужно делать такие штуки для каждой фотки -->
+      </div>
+    </div>
+    <!-- C Jquery вроде как чутка удобнее чем на чистом js это не трогать -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/javs.js"></script>
   </body>
 
 </html>
