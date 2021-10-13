@@ -2,8 +2,15 @@ html, body {
     height: 100%;
     width: 100%;
 }
-body{
+
+@font-face {
     font-family: 'Montserrat','Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
