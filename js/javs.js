@@ -1,15 +1,10 @@
-onload = function()
-{
-    var img_grounds = ['images/BARAB.png',
-    					'images/VEL.png'];
-    var t = 5;
-    setInterval(function()
-                {
-                    var p = img_grounds.shift();
-                    header = document.getElementsByClassName('header');
-                    header[0].animate({opacity: '0'}, 1500)
-                    header[0].style.backgroundImage = 'url(' + p +')';
-                    header[0].animate({opacity: '1'}, 1500)
-                    img_grounds.push(p);
-                }, t * 1000);
-}
+/*Тут крч идет обработка нажатий, если кликнули то добавляется класс и окно открывается*/
+$(function () {
+    $('#modal_open').click(function () {
+        $('.modal_window').addClass('modal_win_active');
+    });
+    $('.close').click(function (){
+        $('.modal_window').removeClass('modal_win_active');
+    });
+});
+
