@@ -148,7 +148,7 @@ function enableScrolling(){
     window.onscroll=function(){};
 }
 
-container.onmouseover = container.onmouseout = mouseEv;
+/*
 
 function mouseEv(event){
     if(event.type == 'mouseover'){
@@ -163,3 +163,4 @@ function mouseEv(event){
     }
    
 }
+*/
