@@ -10,6 +10,35 @@ let RAYCASTER;
 
 let TEXTURE;
 let OBJECT;
+main()
+
+function main() {
+    init();
+    animate();
+}
+
+function init() {
+    initScene();
+    initCamera();
+    initRenderer();
+    initTexture();
+    initLoaders();
+    initControls()
+    
+    
+
+    loadTexture();
+    loadModel();
+    
+   
+
+    document.querySelector('.canvas-container').appendChild(RENDERER.domElement);
+    
+}
+
+
+
+
 
 function initScene() {
     SCENE = new THREE.Scene();
@@ -37,4 +66,70 @@ function initRenderer() {
     RENDERER.setSize(window.innerWidth, window.innerHeight);
 }
 
+function initLoaders() {
+    LOADING_MANAGER = new THREE.LoadingManager();
+    IMAGE_LOADER = new THREE.ImageLoader(LOADING_MANAGER);
+    OBJ_LOADER = new THREE.OBJLoader(LOADING_MANAGER);
+}
 
+
+function loadModel() {
+    OBJ_LOADER.load('/models/Steve.obj', (object) => {
+        object.traverse(function(child) {
+            if (child instanceof THREE.Mesh) {
+                child.castShadow = true;
+                child.receiveShadow = true;
+                child.material.map = TEXTURE;
+            }
+        });
+
+        object.scale.x = 5;
+        object.scale.y = 5;
+        object.scale.z = 5;
+        object.rotation.x = 0;
+        object.rotation.y = -Math.PI/2;
+        object.position.y = -30;
+
+        OBJECT = object;
+        SCENE.add(OBJECT);
+    });
+}
+
+function animate() {
+    requestAnimationFrame(animate);
+    render();
+}
+
+function render() {
+    CAMERA.lookAt(SCENE.position);
+
+    RENDERER.render(SCENE, CAMERA);
+}
+
+function initTexture() {
+    TEXTURE = new THREE.Texture();
+}
+
+function loadTexture() {
+    IMAGE_LOADER.load('/models/texture/SteveTX.png', (image) => {
+        TEXTURE.image = image;
+        TEXTURE.needsUpdate = true;
+    });
+}
+
+function initControls() {
+    CONTROLS = new THREE.OrbitControls(CAMERA);
+    CONTROLS.minPolarAngle = 0;
+    CONTROLS.maxPolarAngle = Math.PI;
+    
+    CONTROLS.update();
+    CONTROLS.autoRotate = true;
+    CONTROLS.autoRotateSpeed = 10;
+    
+}
+
+function animate() {
+    requestAnimationFrame(animate);
+    CONTROLS.update();
+    render();
+}
