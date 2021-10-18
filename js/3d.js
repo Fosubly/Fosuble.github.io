@@ -10,7 +10,8 @@ let RAYCASTER;
 
 let TEXTURE;
 let OBJECT;
-main()
+
+main();
 
 function main() {
     init();

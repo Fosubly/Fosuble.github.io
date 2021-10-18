@@ -8,3 +8,17 @@ $(function () {
     });
 });
 
+$(function () {
+    let i = 0;
+    $('#cat_open').click(function () {
+        if(i == 0){
+            $('.cat_menu').css('display', 'inline-block');
+            i += 1;
+        }
+        else{
+            $('.cat_menu').css('display', 'none');
+            i = 0;
+        }
+    }); 
+});
+
