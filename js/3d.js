@@ -125,7 +125,8 @@ function initControls() {
     CONTROLS.update();
     CONTROLS.autoRotate = true;
     CONTROLS.autoRotateSpeed = 2;
-    
+    CONTROLS.minDistance = 80;
+    CONTROLS.maxDistance = 150;
 }
 
 function animate() {
