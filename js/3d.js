@@ -124,7 +124,7 @@ function initControls() {
     
     CONTROLS.update();
     CONTROLS.autoRotate = true;
-    CONTROLS.autoRotateSpeed = 10;
+    CONTROLS.autoRotateSpeed = 2;
     
 }
 
