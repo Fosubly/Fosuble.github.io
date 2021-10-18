@@ -134,3 +134,28 @@ function animate() {
     CONTROLS.update();
     render();
 }
+
+function disableScrolling(){
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+}
+function enableScrolling(){
+    window.onscroll=function(){};
+}
+
+container.onmouseover = container.onmouseout = mouseEv;
+
+function mouseEv(event){
+    if(event.type == 'mouseover'){
+        console.log("in");
+        alert("in")
+        disableScrolling();
+    }
+    if(event.type == 'mouseout'){
+        alert("notin")
+        console.log("out");
+        enableScrolling();
+    }
+   
+}
