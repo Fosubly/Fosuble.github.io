@@ -76,7 +76,7 @@ function initLoaders() {
 
 function loadModel() {
 
-    OBJ_LOADER.load('./models/Steve.obj', (object) => {
+    OBJ_LOADER.load('./models/BARAB.obj', (object) => {
 
         object.traverse(function(child) {
             if (child instanceof THREE.Mesh) {
