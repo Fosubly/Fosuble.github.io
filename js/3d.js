@@ -75,7 +75,9 @@ function initLoaders() {
 
 
 function loadModel() {
-    OBJ_LOADER.load('models/Steve.obj', (object) => {
+
+    OBJ_LOADER.load('./models/Steve.obj', (object) => {
+
         object.traverse(function(child) {
             if (child instanceof THREE.Mesh) {
                 child.castShadow = true;
@@ -112,7 +114,8 @@ function initTexture() {
 }
 
 function loadTexture() {
-    IMAGE_LOADER.load('models/texture/SteveTX.png', (image) => {
+    IMAGE_LOADER.load('./models/texture/SteveTX.png', (image) => {
+
         TEXTURE.image = image;
         TEXTURE.needsUpdate = true;
     });
