@@ -87,7 +87,7 @@ function loadModel() {
         object.scale.y = 5;
         object.scale.z = 5;
         object.rotation.x = 0;
-        object.rotation.y = -Math.PI/2;
+        object.rotation.y = Math.PI/2;
         object.position.y = -30;
 
         OBJECT = object;
@@ -119,8 +119,8 @@ function loadTexture() {
 
 function initControls() {
     CONTROLS = new THREE.OrbitControls(CAMERA);
-    CONTROLS.minPolarAngle = 0;
-    CONTROLS.maxPolarAngle = Math.PI;
+    CONTROLS.minPolarAngle = Math.PI/2;
+    CONTROLS.maxPolarAngle = Math.PI/2;
     
     CONTROLS.update();
     CONTROLS.autoRotate = true;

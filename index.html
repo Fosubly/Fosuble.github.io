@@ -12,6 +12,12 @@
 
   <body class>
 
+    <script src='https://unpkg.com/three@0.99.0/build/three.min.js'></script>
+    <script src='https://unpkg.com/three@0.99.0/examples/js/loaders/OBJLoader.js'></script>
+    <script src='https://unpkg.com/three@0.99.0/examples/js/controls/OrbitControls.js'></script>
+    <script src='/js/3d.js'></script>
+    
+    
     <header class="header">  
       <div id="captioned-gallery">
       	<figure class="slider">
@@ -72,10 +78,15 @@
     <!-- Вот тут начинается дрочильня -->
     <div id="modal_win" class="modal_window">
       <div class="modal_content">
+       
         <!-- Да-да оригинально, эт крч крестик чтобы закрыть -->
         <a href="#close" title="close" class="close">X</a >
         <h1>Hello</h1>
+        
+        <div class='canvas-container' style="background-color: rgb(255, 0, 85);" ></div>
+        <script>main()</script>
         <!-- В целом все формируем окошко для контента, но я хз, поход нужно делать такие штуки для каждой фотки -->
+        <!--Или воспользоваться магией js-а но кто этим займется я хз, ибо -->>
       </div>
     </div>
     <!-- C Jquery вроде как чутка удобнее чем на чистом js это не трогать -->
