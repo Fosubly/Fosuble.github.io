@@ -128,7 +128,7 @@ function loadTexture() {
 }
 
 function initControls() {
-    CONTROLS = new THREE.OrbitControls(CAMERA);
+    CONTROLS = new THREE.OrbitControls(CAMERA,el);
     CONTROLS.minPolarAngle = Math.PI/2;
     CONTROLS.maxPolarAngle = Math.PI/2;
     
