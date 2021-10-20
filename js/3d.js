@@ -10,7 +10,7 @@ let RAYCASTER;
 
 let TEXTURE;
 let OBJECT;
-
+var el = document.getElementById('kost');
 main();
 
 function main() {
@@ -19,6 +19,7 @@ function main() {
 }
 
 function init() {
+    
     initScene();
     initCamera();
     initRenderer();
@@ -32,8 +33,8 @@ function init() {
     loadModel();
     
    
-
-    document.querySelector('.canvas-container').appendChild(RENDERER.domElement);
+   
+    el.appendChild(RENDERER.domElement);
     
 }
 
@@ -64,7 +65,7 @@ function initCamera() {
 function initRenderer() {
     RENDERER = new THREE.WebGLRenderer({ alpha: true });
     RENDERER.setPixelRatio(window.devicePixelRatio);
-    RENDERER.setSize(window.innerWidth, window.innerHeight);
+    RENDERER.setSize(el.offsetWidth,el.offsetHeight);
 }
 
 function initLoaders() {

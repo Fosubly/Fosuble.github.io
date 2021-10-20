@@ -331,3 +331,9 @@ div#captioned-gallery {
     position: relative;
     box-shadow: 0 5px 15px black;
 }
+
+.canvas-container{
+    background-color: rgb(255, 0, 85);
+    width: 400px;
+    height: 500px;
+}
