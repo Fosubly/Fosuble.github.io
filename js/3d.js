@@ -4,16 +4,21 @@ let RENDERER;
 let LOADING_MANAGER;
 let IMAGE_LOADER;
 let OBJ_LOADER;
+let GLHF_LOADER;
 let CONTROLS;
 let MOUSE;
 let RAYCASTER;
 
 let TEXTURE;
 let OBJECT;
-var el = document.getElementById('kost');
+let   el = document.getElementById('kost');
+let els = {
+    Width : el.offsetWidth,
+    Height: el.offsetHeight 
+}
 main();
 
-function main() {
+function main(modelInfo) {
     init();
     animate();
 }
@@ -65,7 +70,7 @@ function initCamera() {
 function initRenderer() {
     RENDERER = new THREE.WebGLRenderer({ alpha: true });
     RENDERER.setPixelRatio(window.devicePixelRatio);
-    RENDERER.setSize(el.offsetWidth,el.offsetHeight);
+    RENDERER.setSize(els.Width,els.Height);
 }
 
 function initLoaders() {
@@ -87,12 +92,12 @@ function loadModel() {
             }
         });
 
-        object.scale.x = 5;
-        object.scale.y = 5;
-        object.scale.z = 5;
+        object.scale.x = 10;
+        object.scale.y =  10;
+        object.scale.z = 10;
         object.rotation.x = 0;
         object.rotation.y = Math.PI/2;
-        object.position.y = -30;
+        object.position.y = -20;
 
         OBJECT = object;
         SCENE.add(OBJECT);
