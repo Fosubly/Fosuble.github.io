@@ -13,6 +13,7 @@ let TEXTURE;
 let OBJECT;
 let el = document.getElementById('kost');
 let els = {
+    
     Width : el.offsetWidth,
     Height: el.offsetHeight 
 }
