@@ -2,6 +2,7 @@
 $(function () {
     $('#modal_open').click(function () {
         $('.modal_window').addClass('modal_win_active');
+        $('.canvas-container img').css('visibility', 'visible');
     });
     $('.close').click(function (){
         $('.modal_window').removeClass('modal_win_active');
@@ -28,13 +29,13 @@ $(function(){
     let i = 0;
     $('.wiewmodel').click(function(){
         if(i == 0){
-            $('.canvas-container img').css('visibility', 'hidden');
-            $('.canvas-container').css('visibility', 'visible');
+            $('.canvas-container img').css('visibility', 'visible');
+            $('.canvas-container').css('visibility', 'hidden');
             i += 1;
         }
         else{
-            $('.canvas-container img').css('visibility', 'visible');
-            $('.canvas-container').css('visibility', 'hidden');
+            $('.canvas-container img').css('visibility', 'hidden');
+            $('.canvas-container').css('visibility', 'visible');
             i = 0;
         }
     });
