@@ -22,3 +22,20 @@ $(function () {
     }); 
 });
 
+/*Здесь я попукаю <3*/
+
+$(function(){
+    let i = 0;
+    $('.wiewmodel').click(function(){
+        if(i == 0){
+            $('.canvas-container img').css('visibility', 'hidden');
+            $('.canvas-container').css('visibility', 'visible');
+            i += 1;
+        }
+        else{
+            $('.canvas-container img').css('visibility', 'visible');
+            $('.canvas-container').css('visibility', 'hidden');
+            i = 0;
+        }
+    });
+});
