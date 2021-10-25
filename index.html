@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel = "icon" href = "images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>3D Portfolio</title>
   </head>
 
@@ -28,10 +29,7 @@
 
         <div class="search">
           <span id="text0">3D Model & Illustration</span>
-          <form id="search_box" action="/search/">
-            <input id="q" type="text" name="as_q" autocomplite="of" placeholder="Search" />
-            <input id="find" type="image" src="images/Search.png" alt="поиск" />
-          </form>
+          
         </div>
 
         <div class="header_inner">
@@ -81,13 +79,15 @@
 
     <!-- Вот тут начинается дрочильня -->
     <div id="modal_win" class="modal_window">
+      <a href="#close" title="close" class="close">  </a >
+
       <div class="modal_content">
-       
-        <!-- Да-да оригинально, эт крч крестик чтобы закрыть -->
-        <a href="#close" title="close" class="close">X</a >
-        <h1>Hello</h1>
+        <div  id = "kost"  class='canvas-container' >
+          <div class = "infor_for_kost">
+            <img src="images/BEACH.jpg" alt="">
+          </div>
+        </div>
         
-        <div  id = "kost"  class='canvas-container' ></div>
         
         <!-- В целом все формируем окошко для контента, но я хз, поход нужно делать такие штуки для каждой фотки -->
         <!--Или воспользоваться магией js-а но кто этим займется я хз, ибо -->>

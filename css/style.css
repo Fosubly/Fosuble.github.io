@@ -110,7 +110,6 @@ body{
     color: #5e5e5e;
     background-color: white;
     border-radius: 10px;
-
 }
 
 #q{
@@ -120,6 +119,23 @@ body{
     height:60px;
     border: none;
     font-size: 25px;
+    border: none;
+    outline: 0;
+    outline-offset: 0;
+}
+#qq
+{
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    position: absolute; right:10px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 25px;
+    margin-top: 25px;
 }
 
 #find{
@@ -321,10 +337,10 @@ div#captioned-gallery {
 }
 
 .modal_content{
-    width: 100%;
-    max-width: 500px;
-    width: 100%;
-    max-width: 500px;
+    width: 50%;
+    max-width: 1000px;
+    height: 90%;
+    max-height: 900px;
     padding: 50px;
     background: #f9f9f9;
     border-radius: 3px;
@@ -334,6 +350,36 @@ div#captioned-gallery {
 
 .canvas-container{
     background-color: rgb(255, 0, 85);
-    width: 400px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
+}
+.close
+{
+    text-decoration:none;
+    cursor: pointer;
+    position: absolute;
+    padding-top: 0px;
+    top: 10px;
+    right: 10px;
+}
+.close::before
+{
+    content: "\f057";
+    font-family: FontAwesome;
+    font-size: 40px;
+    opacity: 0.8;
+    color: #bebebe;
+}
+.infor_for_kost{
+    
+    height: 100%;
+    display: block;
+
+}
+.infor_for_kost img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    
+
 }
