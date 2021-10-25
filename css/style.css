@@ -371,15 +371,13 @@ div#captioned-gallery {
     color: #bebebe;
 }
 .infor_for_kost{
-    
+    border: 1px solid Red;
     height: 100%;
     display: block;
 
 }
 .infor_for_kost img{
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
-    
-
+    height: 100%;
 }
