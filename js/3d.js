@@ -17,7 +17,7 @@ let els = {
     Width : el.offsetWidth,
     Height: el.offsetHeight 
 }
-main();
+
 
 function main(modelInfo) {
     init();
@@ -102,7 +102,7 @@ function loadModel() {
 
         OBJECT = object;
         SCENE.add(OBJECT);
-        alert(object.getSize())
+        
     });
 }
 
@@ -173,3 +173,5 @@ function mouseEv(event){
 window.onresize= function(){
     animate();
 };
+
+main();
