@@ -64,8 +64,8 @@ function initLights() {
 }
 
 function initCamera() {
-    CAMERA = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 2000);
-    CAMERA.position.z = 100;
+    CAMERA = new THREE.PerspectiveCamera(45, els.Width / els.Height, 1, 2000);
+    CAMERA.position.z = 10;
 }
 
 function initRenderer() {
@@ -102,6 +102,7 @@ function loadModel() {
 
         OBJECT = object;
         SCENE.add(OBJECT);
+        alert(object.getSize())
     });
 }
 
@@ -147,12 +148,10 @@ function animate() {
 }
 
 function disableScrolling(){
-    var x=window.scrollX;
-    var y=window.scrollY;
-    window.onscroll=function(){window.scrollTo(x, y);};
+    document.body.style.overflow = 'hidden';
 }
 function enableScrolling(){
-    window.onscroll=function(){};
+    document.body.style.overflow = '';
 }
 
 /*
@@ -171,3 +170,6 @@ function mouseEv(event){
    
 }
 */
+window.onresize= function(){
+    animate();
+};
