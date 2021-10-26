@@ -452,3 +452,13 @@ canvas{
   .photo_col img:hover {
     transform: scale(1.05); /* Увеличиваем масштаб */
   }
+  .photo-content{
+      border-radius: 5px;
+      border: 20px  #ccc solid;
+      background-color: #ccc;
+      margin: 5px;
+  }
+
+  .photo-description{
+      text-align: center;
+  }
