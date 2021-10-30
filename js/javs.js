@@ -25,6 +25,16 @@ $(function () {
     }); 
 });
 
+$(function (){
+    $('.nav_link').click(function (){
+        $('.about_me_block').animate({right:"0px"}, "slow");
+    });
+    $('#abm_close').click(function (){
+        $('.about_me_block').animate({right:"-100%"}, "slow");
+    });
+});
+
+
 /*Здесь я попукаю <3*/
 
 $(function(){
