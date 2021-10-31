@@ -472,14 +472,15 @@ canvas{
       position: absolute;
       overflow-x: hidden;
       right: -100%;
-      width: 500px;
+      width: 400px;
       height: 100%;
       max-height: 1200px;
-      background: #fff;
+      background: #ffffff;
       transition: right .2s linear;
       z-index: 1000;
       top: 0px;
       box-shadow: 0 0 5px 2px;
+      box-shadow: -1px 2px 9px 1px rgb(0 0 0 / 8%);
 }
 
 .about_me_cont{
@@ -487,12 +488,34 @@ canvas{
 }
 
 .about_me_avatar{
-    height: 250px;
-    width: 250px;
+    
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    background: url(../images/Ivan.jpg) no-repeat;
+    background: url(../images/AboutMe.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     position: absolute;
-    margin: 25% 150px;
+    margin: 5% 25% 80% 25%;
+    float: bottom;
+}
+
+.about_me_name{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    width: 100%;
+    margin: 60% 34%;
+    font-size: 25px;
+    
+}
+
+.about_me_text{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    width: 100%;
+    margin-top: 80%;
+    margin-right: 5%;
+    font-size: 25px;
+    text-align: center;
+    
 }
