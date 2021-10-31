@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link rel = "icon" href = "images/icon.ico" type="image/x-icon">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel = "icon" href = "../images/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>3D Portfolio</title>
   </head>
@@ -19,11 +19,11 @@
     <header class="header">  
       <div id="captioned-gallery">
       	<figure class="slider">
-          <figure class="slider_cont" style="background-image: url('images/SKY.jpg');"></figure>
-          <figure class="slider_cont" style="background-image: url('images/SKOPTER.jpg');"></figure>
-          <figure class="slider_cont" style="background-image: url('images/VEL.png');"></figure>
-          <figure class="slider_cont" style="background-image: url('images/BARAB.png')"></figure>
-          <figure class="slider_cont" style="background-image: url('images/VEL.png');"></figure> 
+          <figure class="slider_cont" style="background-image: url('../images/SKY.jpg');"></figure>
+          <figure class="slider_cont" style="background-image: url('../images/SKOPTER.jpg');"></figure>
+          <figure class="slider_cont" style="background-image: url('../images/VEL.png');"></figure>
+          <figure class="slider_cont" style="background-image: url('../images/BARAB.png')"></figure>
+          <figure class="slider_cont" style="background-image: url('../images/VEL.png');"></figure> 
       	</figure>
       </div>
 
@@ -34,7 +34,7 @@
 
         <div class="header_inner">
           <div class="logo">
-            <img src="images/icon.ico" alt="logo" class="img_logo"/>
+            <img src="../images/icon.ico" alt="logo" class="img_logo"/>
             <span class="header_logo">3D</span>
             <span class="header_text">Portfolio</span>      
             <a href="#" class="nav_link">About me</a>     
@@ -56,7 +56,7 @@
 
     <div class="category">
       <nav class="cat_nav">
-        <a href="#" class="cat_nav_link">Main</a>
+        <a href="../index.html" class="cat_nav_link">Main</a>
         <a id="cat_open" class="cat_nav_link">Categories</a>
         <a href="video.html" class="cat_nav_link">Video</a>
       </nav>
@@ -64,10 +64,10 @@
 
     <div class="cat_menu">
       <ul>
-        <li><a href="./category/sky.html">Небо</a></li>
-        <li><a href="./category/rooms.html">Комнаты</a></li>
-        <li><a href="./category/sceens.html">Сцены</a></li>
-        <li><a href="./category/objects.html">Объекты</a></li>
+        <li><a href="../category/sky.html">Небо</a></li>
+        <li><a href="../category/rooms.html">Комнаты</a></li>
+        <li><a href="../category/sceens.html">Сцены</a></li>
+        <li><a href="../category/objects.html">Объекты</a></li>
       </ul>
     </div>
 
@@ -75,34 +75,19 @@
       <div class="photo_col">
         <!-- крч тут ща буид месиво, и я буду комментить. Через a мы открываем модальное окно, эта хуета буит внизу-->
         <div class="photo-content">
-          <a href="#modal_win" id="modal_open"><img src="images/BEACH.jpg" alt="" class></a>
+          <a href="#modal_win" id="modal_open"><img src="../images/BEACH.jpg" alt="" class></a>
           <div class="photo-description"><span>Пляжик</span></div>
         </div>
-        <div class="photo-content">
-          <img src="images/SKY.jpg" alt="">
-          <div class="photo-description"><span>Туманный дым</span></div>
-        </div>
-        <div class="photo-content"><img src="images/ROOM.png" alt="">
+        <div class="photo-content"><img src="../images/ROOM.png" alt="">
           <div class="photo-description"><span>Берлога сыча</span></div>
         </div>
       </div>
       <div class="photo_col">
-        <div class="photo-content"><img src="images/BARABR.jpg">
-          <div class="photo-description"><span>Барабик</span></div>
-        </div>
-        <div class="photo-content"><img src="images/ROOM2.png" alt="">
+        <div class="photo-content"><img src="../images/ROOM2.png" alt="">
           <div class="photo-description"><span>Берлога крутого сыча</span></div>
         </div>
-        <div class="photo-content"><img src="images/SKOPTER.jpg" alt="">
+        <div class="photo-content"><img src="../images/SKOPTER.jpg" alt="">
           <div class="photo-description"><span>Что за скуптер?</span></div>
-        </div>
-      </div>
-      <div class="photo_col">
-        <div class="photo-content"><img src="images/BOX.jpg" alt="">
-          <div class="photo-description"><span>Бит-бокс</span></div>
-        </div>
-        <div class="photo-content"><img src="images/VELR.jpg" alt="">
-          <div class="photo-description"><span>Дрынд</span></div>
         </div>
       </div>
       
@@ -114,9 +99,9 @@
       <a href="#close" title="close" class="close">  </a >
 
       <div class="modal_content">
-        <div  id = "kost"  class='canvas-container'>
+        <div  id="kost"  class='canvas-container'>
           <div class="loading-model">
-            <img src="images/BEACH.jpg" alt="">
+            <img src="../images/BEACH.jpg" alt="">
             <span>Loading 3D Model</span>
           </div>
         </div>
@@ -136,11 +121,11 @@
     </div>
     <!-- C Jquery вроде как чутка удобнее чем на чистом js это не трогать -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/javs.js"></script>
+    <script src="../js/javs.js"></script>
     <script src='https://unpkg.com/three@0.99.0/build/three.min.js'></script>
     <script src='https://unpkg.com/three@0.99.0/examples/js/loaders/OBJLoader.js'></script>
     <script src='https://unpkg.com/three@0.99.0/examples/js/controls/OrbitControls.js'></script>
-    <script async src='js/3d.js'></script>
+    <script async src='../js/3d.js'></script>
   </body>
 
 </html>
